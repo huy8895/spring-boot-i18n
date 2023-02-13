@@ -1,2 +1,4 @@
-
+spring:
+  messages:
+    basename: i18n/message
 
