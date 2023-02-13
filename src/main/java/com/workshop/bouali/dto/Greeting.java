@@ -1,27 +1,25 @@
 package com.workshop.bouali.dto;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * @author Ali Bouali
- */
-@Getter
-@Setter
+import java.util.List;
+
+
+@Data
 public class Greeting {
 
-  @NotNull(message = "The MESSAGE should not be empty")
   @NotEmpty(message = "The MESSAGE should not be empty")
   private String msg;
 
-  @NotNull(message = "The FROM should not be empty")
-  @NotEmpty(message = "The FROM should not be empty")
-  private String from;
-
-  @NotNull(message = "The TO should not be empty")
-  @NotEmpty(message = "The TO should not be empty")
-  private String to;
+  @NotNull(message = "The categoryDtoList should not be empty")
+  @Size(min=1, max=3)
+  private List<@Valid CategoryDto> categoryDtoList;
 
 }
