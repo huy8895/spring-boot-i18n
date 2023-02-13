@@ -1,6 +1,6 @@
 package com.workshop.bouali.controllers;
 
-import com.workshop.bouali.dto.Greeting;
+import com.workshop.bouali.dto.GreetingDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +21,7 @@ public class GreetingController {
 
   @PostMapping
   public ResponseEntity<String> postGreeting(
-      @Valid @RequestBody Greeting greeting
+      @Valid @RequestBody GreetingDto greeting
   ) {
     return ResponseEntity.ok("ok");
   }

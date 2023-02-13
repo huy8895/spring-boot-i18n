@@ -10,10 +10,10 @@ import java.util.List;
 @Data
 public class CategoryDto {
 
-  @NotEmpty(message = "The name should not be empty")
+  @NotEmpty(message = "validation.message.NotEmpty")
   private String name;
 
-  @NotEmpty(message = "type should not be empty")
+  @NotEmpty(message = "validation.message.NotEmpty")
   private String type;
 
 }

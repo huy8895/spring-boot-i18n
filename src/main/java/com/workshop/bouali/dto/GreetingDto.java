@@ -6,19 +6,17 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.List;
 
 
 @Data
-public class Greeting {
+public class GreetingDto {
 
-  @NotEmpty(message = "The MESSAGE should not be empty")
+  @NotEmpty(message = "validation.message.NotEmpty")
   private String msg;
 
-  @NotNull(message = "The categoryDtoList should not be empty")
+  @NotNull(message = "validation.message.NotEmpty")
   @Size(min=1, max=3)
   private List<@Valid CategoryDto> categoryDtoList;
 
