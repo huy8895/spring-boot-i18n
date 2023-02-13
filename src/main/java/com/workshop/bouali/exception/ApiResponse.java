@@ -1,4 +1,4 @@
-package com.workshop.bouali.exceptions;
+package com.workshop.bouali.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.workshop.bouali.enums.ApiResponseStatus;

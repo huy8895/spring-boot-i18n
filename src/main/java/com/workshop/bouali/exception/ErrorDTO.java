@@ -1,4 +1,4 @@
-package com.workshop.bouali.exceptions;
+package com.workshop.bouali.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
